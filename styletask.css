@@ -16,37 +16,20 @@
     right: 10px;
 }
 .first-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.second-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.third-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.fourth-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.fifth-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.sixth-row{
-    padding: 2rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-}
-.line-yellow{
+    justify-content: space-between;
     display: flex;
     align-items: center;
-    height: 0.8rem;
-    width: 65%;
-    background-color: rgb(170, 165, 165);
-    justify-content: space-between;
     position: relative;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(170, 165, 165);
+}
+.yellow-line{
+    height: 15%;
+    width: 63%;
+    background-color: rgb(170, 165, 165);
+    position: absolute;
+    top: 33px;
+    left: 20px;
 }
 .circle1{
     border: 0px solid;
@@ -54,11 +37,33 @@
     height: 50px;
     width: 50px;
     border-radius: 100rem;
-    position: absolute;
     align-items: center;
     justify-content: center;
     display: flex;
-    left: -1px;
+}
+.circle2{
+    border: 0px solid;
+background-color: rgb(170, 165, 165);
+height: 50px;
+width: 50px;
+border-radius: 100rem;
+align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.circle3{
+    border: 0px solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 100rem;
+    background-color: rgb(170, 165, 165);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.circle3-ellipsis-svg svg{
+    width: 15px; 
+    height: 15px;
 }
 .yellow-circle{
     border: 1px solid rgb(255, 194, 81);
@@ -70,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .inner-yellow-circle{
     border-radius: 100rem;
@@ -85,35 +91,6 @@
     width: 15px; 
     height: 15px;
 }
-.circle2{
-    border: 0px solid;
-background-color: rgb(170, 165, 165);
-height: 50px;
-width: 50px;
-border-radius: 100rem;
-position: absolute;
-left: 49%;
-}
-
-.circle3{
-    border: 0px solid;
-    height: 50px;
-    width: 50px;
-    border-radius: 100rem;
-    background-color: rgb(170, 165, 165);
-    position: absolute;
-    left: 97%;
-}
-.circle3-ellipsis-svg svg{
-    width: 15px; 
-    height: 15px;
-}
-.pending{
-    position: absolute;
-    left: 148%;
-    cursor: pointer;
-    color: orange;
-}
 .yellow-circle-pending{
     border-radius: 100rem;
     border: 2px solid orange;
@@ -124,58 +101,72 @@ left: 49%;
     align-items: end;
     position: absolute;
     fill: orange;
-   right: 55px;
-   top: 0;
+   right: 70px;
+   bottom: 27px;
 }
-.line-blue{
-    display: flex;
-    align-items: center;
-    height: 0.8rem;
-    width: 65%;
-    background-color: rgb(170, 165, 165);
-    justify-content: space-between;
+.pending{
+    cursor: pointer;
+    color: orange;
+}
+.second-row{
     position: relative;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(170, 165, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.blue-line{
+    height: 15%;
+    width: 63%;
+    background-color: rgb(170, 165, 165);
+    position: absolute;
+    top: 33px;
+    left: 20px;
 }
 .blue-circle{
 border-radius: 100rem;
 background-color: rgb(67, 67, 219);
-width: 35px;
-height: 35px ;
+width: 37px;
+height: 37px ;
+position: absolute;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-.circle-blue-svg svg{
-    fill: white;
-    width: 20px;
-     height: 20px
-}
 .running{
-    position: absolute;
-    left: 148%;
     cursor: pointer;
     color: rgb(67, 67, 219);
 }
-.blue-svg{
+.running-rotate-svg svg{
+    width: 20px; 
+    height: 20px;
     position: absolute;
-    top: 0;
-    right: 56px;
+    right: 73px;
+    bottom: 30px;
     fill: rgb(67, 67, 219);
 }
-.circle3-blue-svg svg{
-    width: 20px; 
-    height: 20px
+.blue-svg svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
-
-.line-green{
-    display: flex;
-    align-items: center;
-    height: 0.8rem;
-    width: 65%;
-    background-color: rgb(170, 165, 165);
-    justify-content: space-between;
+.third-row{
     position: relative;
-}   
+    padding: 1rem;
+    border-bottom: 1px solid rgb(170, 165, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.green-line{
+    height: 15%;
+    width: 63%;
+    background-color: rgb(170, 165, 165);
+    position: absolute;
+    top: 33px;
+    left: 20px;
+}
 .green-circle{
     border-radius: 100rem;
     background-color: green;
@@ -184,12 +175,48 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-.line-green .circle2{
+    position: absolute;
+ }
+ 
+.passed{
+    color: green;
+    cursor: pointer;
+}
+.passed-svg svg{
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    right: 73px;
+    bottom: 30px;
+    fill: rgb(67, 67, 219);
+}
+.forth-row{
+    position: relative;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(170, 165, 165);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+.red-line{
+    height: 15%;
+    width: 63%;
+    background-color: rgb(170, 165, 165);
+    position: absolute;
+    top: 33px;
+    left: 20px;
+}
+.red-circle{
+border-radius: 100rem;
+background-color: red;
+width: 37px;
+height: 37px ;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .line-green .circle3{
     display: flex;
     justify-content: center;
@@ -197,30 +224,12 @@ align-items: center;
 }
 .green-svg svg{
     width: 20px; 
-    height: 20px
-}
-.passed{
-    position: absolute;
-    left: 148%;
-    cursor: pointer;
-    color: green;
-}
-.passed-circle-check svg{
-    position: absolute;
-    top: 0px;
-    right: 45px;
-    width: 15px; 
-    height: 15px;
+    height: 20px;
+    fill: white;
 }
 .passed-svg svg{
     width: 15px; 
-    height: 15px;
-    
-}
-.passed-svg{
-    right: 45px;
-        top: 0;
-        position: absolute;
+    height: 15px;   
 }
 .line-red{
     display: flex;
@@ -231,55 +240,20 @@ align-items: center;
     justify-content: space-between;
     position: relative;
 }
-.red-circle1{
-    border-radius: 100rem;
-    background-color: red;
-    width: 35px;
-    height: 35px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-.red-circle1 .circle-red-svg svg{
-    fill: white;
-    width: 20px; 
-    height: 20px;
-}
 .red-svg svg{
-    position: absolute;
-    top: 0;
-    right: 45px;
-    width: 20px; 
-    height: 20px
+    width: 20px;
+    height: 20px;
+    fill: white;
 }
 .failed{
-    position: absolute;
-    left: 148%;
-    cursor: pointer;
     color: red;
+    cursor: pointer;
 }
 .failed-svg svg{
     width: 20px; 
-    height: 20px
-}
-.circle2-red{
-    border-radius: 100rem;
-    background-color: red;
-    width: 35px;
-    height: 35px ;   
-}
-.line-red .circle2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.circle2-red{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: white;
-}
-.circle2-red-svg svg{
-    width: 20px;
-     height: 20px;
+    height: 20px;
+    position: absolute;
+    right: 73px;
+    bottom: 30px;
+    fill: rgb(67, 67, 219);
 }
