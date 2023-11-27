@@ -1,259 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(170, 165, 165);
-    padding: 1rem;
-    cursor: pointer;
-    
+.flex {
+  display: flex;
 }
-.heading{
-    position: relative;
-    right: 10px;
+.justify-between {
+  justify-content: center;
 }
-.first-row{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 1rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
+.items-center {
+  align-items: center;
 }
-.yellow-line{
-    height: 15%;
-    width: 63%;
-    background-color: rgb(170, 165, 165);
-    position: absolute;
-    top: 33px;
-    left: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(170, 165, 165);
+  padding: 1rem;
+  cursor: pointer;
 }
-.circle1{
-    border: 0px solid;
-    background-color: rgb(170, 165, 165);
-    height: 50px;
-    width: 50px;
-    border-radius: 100rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.first-row-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(170, 165, 165);
 }
-.circle2{
-    border: 0px solid;
-background-color: rgb(170, 165, 165);
-height: 50px;
-width: 50px;
-border-radius: 100rem;
-align-items: center;
-    justify-content: center;
-    display: flex;
+.first-row {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 65%;
 }
-.circle3{
-    border: 0px solid;
-    height: 50px;
-    width: 50px;
-    border-radius: 100rem;
-    background-color: rgb(170, 165, 165);
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.yellow-line {
+  height: 25%;
+  width: 94%;
+  background-color: rgb(170, 165, 165);
+  position: absolute;
+  top: 18px;
+  left: 5px;
 }
-.circle3-ellipsis-svg svg{
-    width: 15px; 
-    height: 15px;
+.circle {
+  border: 0px solid;
+  background-color: rgb(170, 165, 165);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.yellow-circle{
-    border: 1px solid rgb(255, 194, 81);
-    border-radius: 100rem;
-    width: 35px;
-    height: 35px ;
-    background-color: orange;
-    box-shadow: 0 0 10px rgb(255, 194, 81) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+/* .circle {
+  border: 0px solid;
+  background-color: rgb(170, 165, 165);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.inner-yellow-circle{
-    border-radius: 100rem;
-    border: 2px solid rgba(255, 255, 0, 0.856);
-    width: 25px;
-    height: 25px ;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    fill: white;
+.circle {
+  border: 0px solid;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(170, 165, 165);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
+.pending-ellipsis-svg svg {
+  width: 15px;
+  height: 15px;
 }
-.yellow-svg svg{
-    width: 15px; 
-    height: 15px;
+.yellow-circle {
+  border: 1px solid rgb(255, 194, 81);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: orange;
+  box-shadow: 0 0 10px rgb(255, 194, 81);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-.yellow-circle-pending{
-    border-radius: 100rem;
-    border: 2px solid orange;
-    width: 25px;
-    height: 25px ;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    position: absolute;
-    fill: orange;
-   right: 70px;
-   bottom: 27px;
+.inner-yellow-circle {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 0, 0.856);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  fill: white;
 }
-.pending{
-    cursor: pointer;
-    color: orange;
+.yellow-svg svg {
+  width: 15px;
+  height: 15px;
 }
-.second-row{
-    position: relative;
-    padding: 1rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+.yellow-circle-pending {
+  border-radius: 50%;
+  border: 2px solid orange;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* position: absolute; */
+  fill: orange;
+  right: 70px;
+  bottom: 27px;
 }
-.blue-line{
-    height: 15%;
-    width: 63%;
-    background-color: rgb(170, 165, 165);
-    position: absolute;
-    top: 33px;
-    left: 20px;
+.pending {
+  cursor: pointer;
+  color: orange;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.blue-circle{
-border-radius: 100rem;
-background-color: rgb(67, 67, 219);
-width: 37px;
-height: 37px ;
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
+.parent-second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(170, 165, 165);
+  padding: 1rem;
 }
-.running{
-    cursor: pointer;
-    color: rgb(67, 67, 219);
+.second-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
 }
-.running-rotate-svg svg{
-    width: 20px; 
-    height: 20px;
-    position: absolute;
-    right: 73px;
-    bottom: 30px;
-    fill: rgb(67, 67, 219);
+.blue-line {
+  height: 15%;
+  width: 63%;
+  background-color: rgb(170, 165, 165);
+  position: absolute;
+  top: 33px;
+  left: 20px;
 }
-.blue-svg svg{
-    width: 20px;
-    height: 20px;
-    fill: white;
+.blue-circle {
+  border-radius: 50%;
+  background-color: rgb(67, 67, 219);
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.third-row{
-    position: relative;
-    padding: 1rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.running {
+  cursor: pointer;
+  color: rgb(67, 67, 219);
+  width: 35%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
 }
-.green-line{
-    height: 15%;
-    width: 63%;
-    background-color: rgb(170, 165, 165);
-    position: absolute;
-    top: 33px;
-    left: 20px;
+.running-rotate-svg svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(67, 67, 219);
 }
-.green-circle{
-    border-radius: 100rem;
-    background-color: green;
-    width: 35px;
-    height: 35px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
- }
- 
-.passed{
-    color: green;
-    cursor: pointer;
+.blue-svg svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
-.passed-svg svg{
-    width: 20px; 
-    height: 20px;
-    position: absolute;
-    right: 73px;
-    bottom: 30px;
-    fill: rgb(67, 67, 219);
+.third-row {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(170, 165, 165);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.forth-row{
-    position: relative;
-    padding: 1rem;
-    border-bottom: 1px solid rgb(170, 165, 165);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.green-line {
+  height: 15%;
+  width: 63%;
+  background-color: rgb(170, 165, 165);
+  position: absolute;
+  top: 33px;
+  left: 20px;
 }
-.red-line{
-    height: 15%;
-    width: 63%;
-    background-color: rgb(170, 165, 165);
-    position: absolute;
-    top: 33px;
-    left: 20px;
-}
-.red-circle{
-border-radius: 100rem;
-background-color: red;
-width: 37px;
-height: 37px ;
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
+.green-circle {
+  border-radius: 50%;
+  background-color: green;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
-.line-green .circle3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.passed {
+  color: green;
+  cursor: pointer;
 }
-.green-svg svg{
-    width: 20px; 
-    height: 20px;
-    fill: white;
+.passed-svg svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 73px;
+  bottom: 30px;
+  fill: rgb(67, 67, 219);
 }
-.passed-svg svg{
-    width: 15px; 
-    height: 15px;   
+.forth-row {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(170, 165, 165);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.line-red{
-    display: flex;
-    align-items: center;
-    height: 0.8rem;
-    width: 65%;
-    background-color: rgb(170, 165, 165);
-    justify-content: space-between;
-    position: relative;
+.red-line {
+  height: 15%;
+  width: 63%;
+  background-color: rgb(170, 165, 165);
+  position: absolute;
+  top: 33px;
+  left: 20px;
 }
-.red-svg svg{
-    width: 20px;
-    height: 20px;
-    fill: white;
+.red-circle {
+  border-radius: 50%;
+  background-color: red;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.failed{
-    color: red;
-    cursor: pointer;
+
+.line-green .circle3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.failed-svg svg{
-    width: 20px; 
-    height: 20px;
-    position: absolute;
-    right: 73px;
-    bottom: 30px;
-    fill: rgb(67, 67, 219);
+.green-svg svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.passed-svg svg {
+  width: 15px;
+  height: 15px;
+}
+.line-red {
+  display: flex;
+  align-items: center;
+  height: 0.8rem;
+  width: 65%;
+  background-color: rgb(170, 165, 165);
+  justify-content: space-between;
+  position: relative;
+}
+.red-svg svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.failed {
+  color: red;
+  cursor: pointer;
+}
+.failed-svg svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 73px;
+  bottom: 30px;
+  fill: rgb(67, 67, 219);
 }
